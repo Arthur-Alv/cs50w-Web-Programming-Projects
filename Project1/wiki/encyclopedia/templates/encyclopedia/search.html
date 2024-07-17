@@ -5,11 +5,11 @@
 {% endblock %}
 
 {% block body %}
-    <h1>All Pages</h1>
+    <h1>Search Results</h1>
 
     <ul>
-        {% for entry in entries %}
-            <li><a href="{% url 'result' title=entry %}"> {{ entry }}</a></li>
+        {% for result in recommendation %}
+            <li><a href="{% url 'result' title=result %}"> {{ result }}</a></li>
         {% endfor %}
     </ul>
 
